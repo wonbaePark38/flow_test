@@ -1,0 +1,134 @@
+html {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  padding: 20px;
+  background: #eeeded;
+  color: #ffffff;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 700;
+  color: black;
+  border-bottom: 2px solid #333;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+p.desc {
+  margin: 5px 0 20px 0;
+  color: #555;
+}
+
+.section {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+  background-color: #c20bfa;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+
+.fixed-extensions label {
+  margin-right: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fixed-extensions input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.custom-input-wrapper {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.custom-input-wrapper input[type="text"] {
+  flex: 1;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.custom-input-wrapper button {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  background-color: brown;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-input-wrapper button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.custom-tags {  
+  min-height: 250px;
+  padding: 10px;
+  border-radius: 4px;
+  background: #fafafa;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.tag {
+  background: #e6e6e6;
+  color: #333;
+  height: 20px;
+  border-radius: 5px;
+  padding: 5px 12px;
+  font-size: 13px;  
+  display: flex;
+  column-gap: 8px;
+  row-gap: 1px;
+  gap: 6px; 
+}
+
+.tag span {
+  user-select: none;
+}
+
+.tag button {
+  border: none;
+  background: #d33;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  line-height: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0;
+}
+
+.count {
+  font-size: 13px;
+  color: #ffffff;  
+}
+
+.label-column {
+  width: 110px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+.content-column {
+  flex: 1;
+  white-space: normal;
+}
+

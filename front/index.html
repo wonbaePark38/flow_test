@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>파일 확장자 차단</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <h2>● 파일 확장자 차단</h2>
+  <p class="desc">파일확장자에 따라 특정 형식의 파일을 첨부하거나 전송하지 못하도록 제한</p>
+
+  <div class="section fixed-extensions">
+    <span class="label-column">고정 확장자</span>
+    <span class="content-column">
+      <label><input type="checkbox" value="bat" />bat</label>
+      <label><input type="checkbox" value="cmd" />cmd</label>
+      <label><input type="checkbox" value="com" />com</label>
+      <label><input type="checkbox" value="cpl" />cpl</label>
+      <label><input type="checkbox" value="exe" />exe</label>
+      <label><input type="checkbox" value="scr" />scr</label>
+      <label><input type="checkbox" value="js" />js</label>
+    </span>
+  </div>
+
+  <div class="section custom-extensions">
+    <span class="label-column">커스텀 확장자</span>
+    <span class="content-column">
+      <div class="custom-input-wrapper">
+        <input type="text" id="customExtInput" placeholder="확장자 입력" maxlength="10" />
+        <button id="addBtn" disabled>+추가</button>
+      </div>
+      <div class="count" id="countDisplay">0/200</div>
+      <div class="custom-tags" id="customTagsContainer">
+        <!-- 확장자 태그들 -->
+      </div>
+    </span>
+  </div>  
+
+  <div class="section upload-section">
+    <span class="label-column">파일 업로드</span>
+    <span class="content-column">
+      <input type="file" id="fileInput" />
+    </span>
+  </div>
+</body>
+</html>
